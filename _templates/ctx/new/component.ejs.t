@@ -13,7 +13,7 @@ const <%= Name %> = () => {
 }
 <% } else { -%>
 
-class <%= Name %> {
+class <%= Name %> extends React.Component {
   constructor(props) {
     super(props);
     this.state = {}
