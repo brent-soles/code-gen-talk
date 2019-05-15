@@ -3,15 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "hygen": "^4.0.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-redux": "^7.0.3",
+    "react-scripts": "3.0.1",
+    "redux": "^4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "ctx:init": "hygen ctx init",
+    "gen:ctx": "hygen ctx new",
+    "gen:action": "hygen ctx new:action",
+    "gen:component": "hygen ctx new:component",
+    "gen:container": "hygen ctx new:container",
+    "gen:func-component": "hygen ctx new:component --type function",
+    "gen:reducer": "hygen ctx new:reducer"
   },
   "eslintConfig": {
     "extends": "react-app"
