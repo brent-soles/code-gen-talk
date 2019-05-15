@@ -3,10 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+
+import RootReducer from './reducers'
+import Counter from './containers/counter';
+
+const store = createStore(RootReducer);
+console.log("STORE", store, store.getState());
+
 const App = () => (
-  <>
+  <Provider store={store}>
     <h1>Hi...!</h1>
-  </>
+    <Counter />
+  </Provider>
 )
 
 ReactDOM.render(<App />, document.getElementById('root'));
